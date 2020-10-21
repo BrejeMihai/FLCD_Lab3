@@ -1,0 +1,22 @@
+int! a,b,c~
+int! min~
+
+min= a~
+
+incase (b lt a) then
+{
+	min= b~
+	incase (c lt b) then
+	{
+		min= c~
+	}
+}
+ifnot then 
+{
+	min= a~
+	incase (c lt a) then 
+	{
+		min= c~
+	}
+}
+echo min~
